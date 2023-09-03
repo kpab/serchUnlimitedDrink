@@ -32,8 +32,6 @@ with st.form(key='form'):
     selected_free_food = st.toggle('食べ放題')
     private_room = st.toggle('個室あり')
     midnight2 = st.toggle('23時以降食事OK')
-    #sommelier2 = st.toggle('ソムリエ')
-
     if selected_free_food:
         free_food = 1   
     else:
@@ -42,14 +40,10 @@ with st.form(key='form'):
         private_room = 1   
     else:
         private_room = 0  
-    ##   sommelier = 1
-    #else:
-      #  sommelier = 0
     if midnight2:
         midnight = 1
     else:
         midnight = 0
-
     count = st.slider("検索店舗数", 1, 20, 10)
     submit_btn = st.form_submit_button('検索')
 
