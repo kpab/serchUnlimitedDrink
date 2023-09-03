@@ -29,9 +29,9 @@ st.caption('飲み放題ありの店舗のみ出力されます^_^')
 
 with st.form(key='form'):
     selected_keyword = st.text_input('地名 or キーワードを入力', '町田')
-    selected_free_food = st.toggle('食べ放題')
-    private_room = st.toggle('個室あり')
-    midnight2 = st.toggle('23時以降食事OK')
+    selected_free_food = st.checkbox('食べ放題')
+    private_room = st.checkbox('個室あり')
+    midnight2 = st.checkbox('23時以降食事OK')
     if selected_free_food:
         free_food = 1   
     else:
